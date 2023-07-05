@@ -6,16 +6,52 @@
     <title>Custom Report</title>
   </head>
   <body>
-    <h1>Custom Report 2023</h1>
+    <div id="page">
+    <h1>Patient Custom Report 2023</h1>
     <fieldset>
       <form action="http://www.example.org/search.php">
-        <p>Search:</p>
-      </form>
-      <input type="search" name="search" />
-      <input type="submit" value="search" />
+      <input type="search" name="search" placeholder="enter script number" />
+      <label for="dateRange">Date:</label>
+       <input type="date" name="date range" />
+        <input type="submit" value="search" />
+        <select name="filter prescription options"/>
+        <option value= "No Selection">No Selection</option>
+       
+            <option value= "Active Prescriptions Only">Active Prescriptions Only</option>
+            <option value="On-Hold"> On-Hold</option> 
+            <option value="Inactive prescriptions only">Inactive Prescriptions Only</option>
+      </select>
+      <p> <i>Include Insurance?</i> </p>
+      <select name="include insurance"  multiple="multiple"> 
+        <option value="BIN" > BIN </option>
+        <option value="PCN " > PCN </option>
+        <option value="GROUP" > GRP </option>
+        <option value="PA Codes" > PA Codes </option>
+        <option value="Online Status" > Online Status </option>
+    </select>
+    <br/>
+        <p> <i>Include Prescriber?</i> </p>
+        <select name="include prescriber"  multiple="multiple"> 
+        <option value="DEA Number"> DEA</option> <tooltip text="include"> </tooltip>
+        <option value="NPI Number"> NPI Number</option>
+        <option value="Prescriber Address">  Address</option>
+        <option value="Prescriber Fax">  Fax</option>
+        <option value="Prescriber Phone"> Phone</option>
+      </select>
+
+      <div id="personalization table">
+    <!-- !<--- SetUp table here -->
+      </div>
+<button name="run report">Run Report</button>
+
+        </label>
+    <label>
+      </div>
     </fieldset>
+</form>
     <main>
       <footer></footer>
     </main>
+</div>
   </body>
 </html>
