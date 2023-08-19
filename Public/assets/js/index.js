@@ -1,20 +1,22 @@
 //Variable Declarations
 //Declaring variables and storing them in global memory and assigning value of an element. 
-
-var viewReport = document.getElementById('viewReport')
+var mrnSearch = document.querySelector('#mrnSearch');
+var viewReport = document.getElementById('viewReport');
 var sendFax = document.getElementById('sendFax');
+// this is goiong to store user input 
 
+var preview = "";
 
 //Action to be perfomed on click store in named function
 
 
 function previewReport(e) {
-    e.preventDefault();
+    e.preventDefault(); //prevents default behavior of form we don't want it to refresh
     console.log(e);
-    var previewComplete = "Here is your report preview" +
-        viewReport.value;
+    var preview = "Here is your report preview" +
+        mrnSearch.value + preview;
 
-    previewComplete.textContent = previewComplete;
+    previewReport.textContent = preview;
 }
 
 //Event Handlers 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formOne</title>
+  </head>
+
+  <body>
+    <header>Patient Intake 2023</header>
+
+    <form>
+      <fieldset>
+        <legend>New Patient Intake Form</legend>
+        <label>
+          Name:
+          <input type="text" id="name" size="40" max-length="100" />
+        </label>
+        <br />
+        <label>
+          Email:
+          <input type="email" name="email" size="30" max-length="100" />
+          <br />
+        </label>
+        <fieldset>
+          <legend>Previous Health Conditions:</legend>
+          <label>
+            Asthma
+            <input type="checkbox" name="checkbox" /><br />
+            Bronchitis
+            <input type="checkbox" name="checkbox" />
+            Coughing
+            <input type="checkbox" name="checkbox" />
+            Other
+            <input type="checkbox" name="checkbox" />
+            <br />
+            <button id="submit">Submit</button>
+            <div>
+              <h3 id="response"></h3>
+            </div>
+          </label>
+        </fieldset>
+      </fieldset>
+    </form>
+    <script src="./assets/js/newPatientForm.js"></script>
+  </body>
+</html>

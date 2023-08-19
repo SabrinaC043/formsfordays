@@ -3,52 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Report</title>
+    <title>Patient Data Report</title>
     <link rel="icon" type="image/x-icon"
     href="/images/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
     <header>
-      <h1>Custom Report 2023</h1>
-       <nav>
+      <h1>Patient Data Reports</h1>
+
+       <nav id="quickPatientReports">
          <ul>
-        <li id="quick-1">MedsyncQuick</li>
-        <li id="quick-2">Patient HSA/FSA </li>
-        <li id="quick-3">Insurance Reject </li>
+        <a href="placeholder.com" id="medSync-1">MedsyncQuick</a>
+        <a href="placeholder.com" id="fsaHsa-2">Patient HSA/FSA </a>
+        <a href="placeholder.com" id="insuranceReject-3">Insurance Reject </a>
       </ul>
     </nav>
   </header>
 
-  <section>
-    <img id="medsyncHand"src="./assets/medsync.jpeg" alt="medsync image of hand holding pills animated" />
-  </section>
     <fieldset>
-      <form action="http://www.example.org/search.php">
-      <input type="search" name="search" placeholder="medical record number" />
-      <label for="dateRange">Date:</label>
+      <legend>
+        Search Patient Details:
+      </legend>
+      <!-- <form action="http://www.example.org/search.php"> -->
+      <input id="mrnSearch" name="medical-record-number" placeholder="medical record number" />
+      <button type="submit">search</button>
+      <label for="date of birth">DOB:</label>
        <input type="date" name="date range" />
-        <input type="submit" value="search" />
-        <select name="filter prescription options"/>
-        <option value= "No Selection">No Selection</option>
-       
-            <option value= "Active Prescriptions Only">Active Prescriptions Only</option>
+       <!-- Status Filters for activity of prescriptions-->
+        <select name="statusFilters"/>
+          <option value= "No Selection">No Selection</option>
+          <option value= "Active Prescriptions Only">Active Prescriptions Only</option>
             <option value="On-Hold"> On-Hold</option> 
             <option value="Inactive prescriptions only">Inactive Prescriptions Only</option>
+             <input type="submit" value="search" />
       </select>
-      <p> <i>Include Insurance?</i> </p>
+
+      <!-- This is including insurance later on after I build example dataSet for manipulation
+        <p> <i>Include Insurance?</i> </p>
       <select name="include insurance"  multiple="multiple"> 
         <option value="BIN" > BIN </option>
         <option value="PCN " > PCN </option>
         <option value="GROUP" > GRP </option>
         <option value="PA Codes" > PA Codes </option>
         <option value="Online Status" > Online Status </option>
-    </select>
+    </select> -->
     <blockquote>
       This is going to example reports and a report window
     </blockquote>
     
-    <br/>
+    <!-- <br/>
         <p> <i>Include Prescriber?</i> </p>
         <select name="include prescriber"  multiple="multiple"> 
         <option value="DEA Number"> DEA</option> <tooltip text="include"> </tooltip>
@@ -56,27 +60,26 @@
         <option value="Prescriber Address">  Address</option>
         <option value="Prescriber Fax">  Fax</option>
         <option value="Prescriber Phone"> Phone</option>
-      </select>
-
+      </select> -->
+<!-- 
       <div id="personalization table">
         <table>
           <th>File Type:</th>
       <!---Link to KnowledgeBase article on line 49-->
-          <a href="http://www.google.com" text="Kblink">Questions?</a>
+          <!-- <a href="http://www.google.com" text="Kblink">Questions?</a>
             <input type="text my-4"/>
             <tr> Sample </tr>
             <tr> Sample </tr>
-      </table>
+      </table> -->
     <!-- !<--- SetUp table here -->
-      </div>  
+      <!-- </div>  
       <textarea> Input fax number to send</textarea>
 <button id="viewReport"/>view report</button>
 <button type="submit my-2">submit</button>
 <address>
   Example Address: 1234 Wilmer street Kentucky, CA 1234
 </address>
-<button id="sendFax">send via fax</button>
-
+<button id="sendFax">send via fax</button> -->
 
 </section>
 
@@ -93,6 +96,6 @@
       </footer>
     </main>
 </div>
-<script src="script.js"></script>
+<script src="./assets/js/index.js"></script>
   </body>
 </html>

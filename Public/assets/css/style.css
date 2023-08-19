@@ -1,0 +1,20 @@
+* {
+    background-color: lightcyan;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+/* Patient Data Report 2023 */
+h1{
+    font-size: 25;
+    text-align:center;
+}
+
+
+.nav{
+    display:flex;
+    display:inline;
+    justify-content: space-evenly;
+}
+
