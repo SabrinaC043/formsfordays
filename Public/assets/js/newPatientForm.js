@@ -6,15 +6,14 @@ var submissionResponseEl = document.querySelector("#response");
 
 // Do something with them
 
-function revealResponse(e) {
+function showResponse(e) {
     e.preventDefault();
+    console.log(e);
     var response =
-        "Thank you for your submission" + nameInput.value + "We will confirm your enrollment at" + emailInput.value + "!";
+        "Thank you for your submission " + nameInput.value + " we will confirm your enrollment at: " + emailInput.value + "!";
 
     submissionResponseEl.textContent = response;
-}
-
-// append to dom
+};
 
 //add event handler 
-submitEl.addEventListener("click", revealResponse);
+submitEl.addEventListener("click", showResponse);
