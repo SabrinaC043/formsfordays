@@ -13,15 +13,15 @@
       <h1>Custom Report 2023</h1>
        <nav>
          <ul>
-        <li id="quick-1">Quick Report 1 Patient </li>
-        <li id="quick-2">Quick Report 2 Patient </li>
-        <li id="quick-3">Quick Report 3 Patient </li>
+        <li id="quick-1">MedsyncQuick</li>
+        <li id="quick-2">Patient HSA/FSA </li>
+        <li id="quick-3">Insurance Reject </li>
       </ul>
     </nav>
   </header>
 
   <section>
-    <img src="./assets/images/image-1png" alt="box with number 1" />
+    <img id="medsyncHand"src="./assets/medsync.jpeg" alt="medsync image of hand holding pills animated" />
   </section>
     <fieldset>
       <form action="http://www.example.org/search.php">
@@ -70,8 +70,12 @@
     <!-- !<--- SetUp table here -->
       </div>  
       <textarea> Input fax number to send</textarea>
-<button name="view report my-2"/>view report</button>
+<button id="viewReport"/>view report</button>
 <button type="submit my-2">submit</button>
+<address>
+  Example Address: 1234 Wilmer street Kentucky, CA 1234
+</address>
+<button id="sendFax">send via fax</button>
 
 
 </section>
@@ -84,8 +88,11 @@
     </fieldset>
 </form>
     <main>
-      <footer></footer>
+      <footer>
+
+      </footer>
     </main>
 </div>
+<script src="script.js"></script>
   </body>
 </html>
